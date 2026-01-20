@@ -17,7 +17,7 @@ Pickpocket local NPCs for random items and cash.
 - Enable `Config.DispatchOnFail` or `Config.DispatchOnSuccess` to notify police.
 - If you are using ps-dispatch then paste the below codein client/alert.lua
 
-     ['PickpocketingInProgress'] = { -- Need to match the codeName in alerts.lua
+     <!-- ['PickpocketingInProgress'] = { -- Need to match the codeName in alerts.lua
         radius = 0,
         sprite = 119,
         color = 1,
@@ -27,12 +27,12 @@ Pickpocket local NPCs for random items and cash.
         sound2 = 'GTAO_FM_Events_Soundset',
         offset = false,
         flash = false
-    },
+    }, -->
 
 
 - If you are using ps-dispatch then paste the below codein shared/config.lua
 
-local function PickpocketingInProgress()
+<!-- local function PickpocketingInProgress()
     local coords = GetEntityCoords(cache.ped)
     local vehicle = GetVehicleData(cache.vehicle)
 
@@ -50,4 +50,4 @@ local function PickpocketingInProgress()
 
     TriggerServerEvent('ps-dispatch:server:notify', dispatchData)
 end
-exports('PickpocketingInProgress', PickpocketingInProgress)
+exports('PickpocketingInProgress', PickpocketingInProgress) -->
