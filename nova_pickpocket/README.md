@@ -53,3 +53,6 @@ local function PickpocketingInProgress()
 end
 exports('PickpocketingInProgress', PickpocketingInProgress)
 ```
+```
+// code goes here
+```
