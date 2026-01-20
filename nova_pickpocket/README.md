@@ -32,7 +32,8 @@ Pickpocket local NPCs for random items and cash.
 
 - If you are using ps-dispatch then paste the below codein shared/config.lua
 
-<!-- local function PickpocketingInProgress()
+```
+local function PickpocketingInProgress()
     local coords = GetEntityCoords(cache.ped)
     local vehicle = GetVehicleData(cache.vehicle)
 
@@ -50,4 +51,5 @@ Pickpocket local NPCs for random items and cash.
 
     TriggerServerEvent('ps-dispatch:server:notify', dispatchData)
 end
-exports('PickpocketingInProgress', PickpocketingInProgress) -->
+exports('PickpocketingInProgress', PickpocketingInProgress)
+```
